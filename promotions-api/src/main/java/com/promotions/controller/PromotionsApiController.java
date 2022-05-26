@@ -2,6 +2,8 @@ package com.promotions.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.promotions.dto.WhatsAppMsgDto;
 import com.promotions.entities.Message;
 import com.promotions.services.PromotionsService;
 
@@ -25,6 +29,8 @@ public class PromotionsApiController {
 
 	@Autowired
 	private PromotionsService promotionsService;
+
+	private ObjectMapper objectMapper = new ObjectMapper();
 
 	@GetMapping("/test")
 	public String test() {
@@ -72,6 +78,18 @@ public class PromotionsApiController {
 			message = promotionsService.deleteMessage(id);
 		}
 		return message;
+	}
+
+	@PostMapping("/sendWhatsAppMsg")
+	public String sendWhatsAppMsg(@RequestBody WhatsAppMsgDto whatsAppMsgDto) {
+		promotionsService.sendWhatsAppMsg(whatsAppMsgDto);
+		return "Successfuly sent WhatsApp message!";
+	}
+
+	@PostMapping("/twilioWhatsAppWebhook")
+	public void twilioWhatsAppWebhook(HttpServletRequest webhookResponse) {
+		logger.info("Webhook Response={}", webhookResponse.getParameterMap());
+		promotionsService.processWhatsAppWebhook(webhookResponse.getParameterMap());
 	}
 
 }
