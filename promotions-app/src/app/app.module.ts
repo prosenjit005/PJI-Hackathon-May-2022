@@ -13,6 +13,7 @@ import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonService } from './services/common.service';
+import { PromotionsService } from './services/promotions.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { CommonService } from './services/common.service';
     MaterialModule,
     FormsModule, HttpClientModule
   ],
-  providers: [CommonService],
+  providers: [CommonService, PromotionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

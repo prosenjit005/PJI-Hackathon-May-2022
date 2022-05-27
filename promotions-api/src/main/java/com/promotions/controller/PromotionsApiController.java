@@ -35,13 +35,13 @@ public class PromotionsApiController {
 	private PromotionsService promotionsService;
 
 	private ObjectMapper objectMapper = new ObjectMapper();
-	
+
 	@Autowired
 	private PromotionRepository promotionRepository;
-	
+
 	@Autowired
 	private CustomerRepository customerRepository;
-	
+
 	@GetMapping("/test")
 	public String test() {
 		logger.info("PromotionsApiController test endpoint hit success!");
@@ -89,13 +89,13 @@ public class PromotionsApiController {
 		}
 		return message;
 	}
-	
+
 	@GetMapping("/getAllPromotions")
 	public List<Promotion> getAllPromotions() {
 		List<Promotion> promotions = promotionRepository.findAll();
 		return promotions;
 	}
-	
+
 	@GetMapping("/getAllCustomers")
 	public List<Customer> getAllCustomers() {
 		List<Customer> customers = customerRepository.findAll();
