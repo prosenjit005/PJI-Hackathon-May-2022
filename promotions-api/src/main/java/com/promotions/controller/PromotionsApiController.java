@@ -18,7 +18,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.promotions.dto.WhatsAppMsgDto;
+import com.promotions.entities.Customer;
 import com.promotions.entities.Message;
+import com.promotions.entities.Promotion;
+import com.promotions.repository.CustomerRepository;
+import com.promotions.repository.PromotionRepository;
 import com.promotions.services.PromotionsService;
 
 @RestController
@@ -31,7 +35,13 @@ public class PromotionsApiController {
 	private PromotionsService promotionsService;
 
 	private ObjectMapper objectMapper = new ObjectMapper();
-
+	
+	@Autowired
+	private PromotionRepository promotionRepository;
+	
+	@Autowired
+	private CustomerRepository customerRepository;
+	
 	@GetMapping("/test")
 	public String test() {
 		logger.info("PromotionsApiController test endpoint hit success!");
@@ -78,6 +88,18 @@ public class PromotionsApiController {
 			message = promotionsService.deleteMessage(id);
 		}
 		return message;
+	}
+	
+	@GetMapping("/getAllPromotions")
+	public List<Promotion> getAllPromotions() {
+		List<Promotion> promotions = promotionRepository.findAll();
+		return promotions;
+	}
+	
+	@GetMapping("/getAllCustomers")
+	public List<Customer> getAllCustomers() {
+		List<Customer> customers = customerRepository.findAll();
+		return customers;
 	}
 
 	@PostMapping("/sendWhatsAppMsg")
