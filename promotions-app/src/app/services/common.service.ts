@@ -5,8 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class CommonService {
 
-  username: string = "user1";
-  password: string = "password1";
+  username: string = "admin";
+  password: string = "admin";
 
   httpBaseCompanyUri: string = "http://localhost:8989/api/v1.0/market/company";
 
