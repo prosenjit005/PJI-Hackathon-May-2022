@@ -1,0 +1,26 @@
+#loginMainDivId {
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+
+.mainLoginDiv{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 100px;
+    padding-bottom: 165px;
+}
+
+.loginHeading{
+    font-size: 20px;
+}
+
+.loginText{
+    padding: 5px 5px 25px 5px;
+}
+
+.userNameDiv{
+    width: 400px;
+}
+
+.passDiv{
+    width: 400px;
+}
