@@ -30,8 +30,7 @@ export class PromotionsService {
 
 
   getAllCustomers(): Observable<Customer[]> {
-    return this.http.get<Customer[]>(this.commonService.httpBaseCompanyUri + this.getAllCustomersUrl,
-      this.httpOptions);
+    return this.http.get<Customer[]>(this.commonService.httpBaseCompanyUri + this.getAllCustomersUrl);
   }
 
 
