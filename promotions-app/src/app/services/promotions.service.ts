@@ -20,6 +20,11 @@ export interface Promotion {
   promoMessage: string;
 }
 
+export interface WhatsAppMsgDto {
+  Body: string;
+  From: string;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -27,6 +32,7 @@ export class PromotionsService {
 
   getAllCustomersUrl = '/getAllCustomers';
   getAllPromotionsUrl = '/getAllPromotions';
+  sendWhatsAppMsgUrl = '/sendWhatsAppMsg';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -44,6 +50,10 @@ export class PromotionsService {
 
   getAllPromotions(): Observable<Promotion[]> {
     return this.http.get<Promotion[]>(this.commonService.httpBaseCompanyUri + this.getAllPromotionsUrl);
+  }
+
+  sendWhatsAppMsg(whatsAppMsgDto: WhatsAppMsgDto): Observable<void> {
+    return this.http.post<void>(this.commonService.httpBaseCompanyUri + this.sendWhatsAppMsgUrl, whatsAppMsgDto);
   }
 
 }

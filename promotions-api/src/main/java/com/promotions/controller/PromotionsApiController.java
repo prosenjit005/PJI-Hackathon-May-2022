@@ -106,7 +106,8 @@ public class PromotionsApiController {
 
 	@PostMapping("/sendWhatsAppMsg")
 	public String sendWhatsAppMsg(@RequestBody WhatsAppMsgDto whatsAppMsgDto) {
-		promotionsService.sendWhatsAppMsg(whatsAppMsgDto);
+		logger.info("sendWhatsAppMsg request={}", whatsAppMsgDto.toString());
+		// promotionsService.sendWhatsAppMsg(whatsAppMsgDto);
 		return "Successfuly sent WhatsApp message!";
 	}
 

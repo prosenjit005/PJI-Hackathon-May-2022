@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Customer, Promotion, PromotionsService } from '../services/promotions.service';
+import { Customer, Promotion, PromotionsService, WhatsAppMsgDto } from '../services/promotions.service';
 import { FormControl } from '@angular/forms';
 
 @Component({
@@ -34,6 +34,27 @@ export class HomeComponent implements OnInit {
       .subscribe(data => {
         this.promotionsList = data;
       });
+  }
+
+  sendMsg() {
+    let whatsAppMsgDto = {} as WhatsAppMsgDto;
+    let msg = "Please select one of the below offers:";
+    let count = 1;
+    this.selectedPromotions.value.forEach((promo: { promoMessage: string; }) => {
+      msg += "\n" + count + ". " + promo.promoMessage;
+      ++count;
+    });
+    console.log(msg);
+    whatsAppMsgDto.Body = msg;
+    whatsAppMsgDto.From = this.selectedCustomers.value.contactNumber;
+    console.log(whatsAppMsgDto);
+
+    this.promotionsService.sendWhatsAppMsg(whatsAppMsgDto)
+      .subscribe(data => {
+        console.log("sending message success!");
+      });
+
+
   }
 
 }

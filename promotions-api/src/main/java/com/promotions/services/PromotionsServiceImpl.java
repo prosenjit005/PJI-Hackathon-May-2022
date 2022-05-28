@@ -158,7 +158,7 @@ public class PromotionsServiceImpl implements PromotionsService {
 		Twilio.init(twilioAccountSid, twilioAccountAuthToken);
 		com.twilio.rest.api.v2010.account.Message twilioMessage = com.twilio.rest.api.v2010.account.Message
 				.creator(new com.twilio.type.PhoneNumber(twilioAccountWhatsAppNumber),
-						new com.twilio.type.PhoneNumber(cusWhatsAppNumber), messageText)
+						new com.twilio.type.PhoneNumber("whatsapp:"+cusWhatsAppNumber), messageText)
 				.create();
 		logger.info("Twilio SID={}", twilioMessage.getSid());
 	}
