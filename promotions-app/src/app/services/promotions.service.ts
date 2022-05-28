@@ -12,12 +12,21 @@ export interface Customer {
   zipcode: string;
 }
 
+export interface Promotion {
+  promoId: number;
+  promoCode: string;
+  startDate: string;
+  endDate: string;
+  promoMessage: string;
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class PromotionsService {
 
   getAllCustomersUrl = '/getAllCustomers';
+  getAllPromotionsUrl = '/getAllPromotions';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -33,6 +42,8 @@ export class PromotionsService {
     return this.http.get<Customer[]>(this.commonService.httpBaseCompanyUri + this.getAllCustomersUrl);
   }
 
-
+  getAllPromotions(): Observable<Promotion[]> {
+    return this.http.get<Promotion[]>(this.commonService.httpBaseCompanyUri + this.getAllPromotionsUrl);
+  }
 
 }

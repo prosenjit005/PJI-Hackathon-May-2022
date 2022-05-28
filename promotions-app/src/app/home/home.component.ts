@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PromotionsService } from '../services/promotions.service';
+import { Customer, Promotion, PromotionsService } from '../services/promotions.service';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -8,17 +9,30 @@ import { PromotionsService } from '../services/promotions.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private promotionsService:PromotionsService) { }
+  customersList: Customer[] = [];
+  promotionsList: Promotion[] = [];
+
+  selectedCustomers = new FormControl();
+  selectedPromotions = new FormControl();
+
+  constructor(private promotionsService: PromotionsService) { }
 
   ngOnInit(): void {
     this.getAllCustomersService();
+    this.getAllPromotionsService();
   }
 
-  getAllCustomersService(){
+  getAllCustomersService() {
     this.promotionsService.getAllCustomers()
       .subscribe(data => {
-        console.log(data);
-        console.log(data.length);
+        this.customersList = data;
+      });
+  }
+
+  getAllPromotionsService() {
+    this.promotionsService.getAllPromotions()
+      .subscribe(data => {
+        this.promotionsList = data;
       });
   }
 

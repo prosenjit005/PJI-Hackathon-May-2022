@@ -1,6 +1,28 @@
 <div class="mainContent" id="homeMainContId">
+    <form>
+        <h1>
+            Promotions Page
+        </h1>
 
-    <h1>
-        Promotions Page
-    </h1>
+        
+        <div>
+            <mat-form-field appearance="fill" class="promotionsDD">
+                <mat-label>Promotions</mat-label>
+                <mat-select [formControl]="selectedPromotions" multiple>
+                    <mat-option *ngFor="let promotion of promotionsList" [value]="promotion">{{promotion.promoMessage}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="customerDD">
+                <mat-label>Customers</mat-label>
+                <mat-select [formControl]="selectedCustomers">
+                    <mat-option *ngFor="let customer of customersList" [value]="customer">{{customer.name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <button mat-button color="primary" class="customBtn">Send Message</button>
+            
+        </div>
+
+    </form>
 </div>

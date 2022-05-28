@@ -10,7 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonService } from './services/common.service';
 import { PromotionsService } from './services/promotions.service';
@@ -28,7 +28,8 @@ import { PromotionsService } from './services/promotions.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule, HttpClientModule
+    FormsModule, HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [CommonService, PromotionsService],
   bootstrap: [AppComponent]
