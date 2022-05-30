@@ -154,7 +154,7 @@ public class PromotionsServiceImpl implements PromotionsService {
 	@Override
 	public void sendWhatsAppMsg(WhatsAppMsgDto whatsAppMsgDto) {
 		String messageText = whatsAppMsgDto.getBody();
-		String cusWhatsAppNumber = whatsAppMsgDto.getFrom();
+		String cusWhatsAppNumber = whatsAppMsgDto.getTo();
 		Twilio.init(twilioAccountSid, twilioAccountAuthToken);
 		com.twilio.rest.api.v2010.account.Message twilioMessage = com.twilio.rest.api.v2010.account.Message
 				.creator(new com.twilio.type.PhoneNumber(twilioAccountWhatsAppNumber),

@@ -45,9 +45,8 @@ export class HomeComponent implements OnInit {
       ++count;
     });
     console.log(msg);
-    whatsAppMsgDto.Body = msg;
-    whatsAppMsgDto.From = this.selectedCustomers.value.contactNumber;
-    console.log(whatsAppMsgDto);
+    whatsAppMsgDto.body = msg;
+    whatsAppMsgDto.to = this.selectedCustomers.value.contactNumber;
 
     this.promotionsService.sendWhatsAppMsg(whatsAppMsgDto)
       .subscribe(data => {

@@ -21,8 +21,20 @@ export interface Promotion {
 }
 
 export interface WhatsAppMsgDto {
-  Body: string;
-  From: string;
+  body: string;
+  from: string;
+  ApiVersion: string;
+  SmsSid: string;
+  SmsStatus: string;
+  SmsMessageSid: string;
+  ProfileName: string;
+  NumSegments: string;
+  WaId: string;
+  MessageSid: string;
+  AccountSid: string;
+  ReferralNumMedia: string;
+  to: string;
+  NumMedia: string;
 }
 
 @Injectable({
@@ -53,7 +65,9 @@ export class PromotionsService {
   }
 
   sendWhatsAppMsg(whatsAppMsgDto: WhatsAppMsgDto): Observable<void> {
-    return this.http.post<void>(this.commonService.httpBaseCompanyUri + this.sendWhatsAppMsgUrl, whatsAppMsgDto);
+    console.log(whatsAppMsgDto);
+    return this.http.post<void>(this.commonService.httpBaseCompanyUri + this.sendWhatsAppMsgUrl,
+      whatsAppMsgDto, this.httpOptions);
   }
 
 }
