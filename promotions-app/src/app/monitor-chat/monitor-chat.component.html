@@ -8,6 +8,41 @@
     </div>
 
     <div class="mainChatBoxDiv">
-        Main Chat Box
+        <ul class="chat-thread">
+            <li style="white-space: pre-line">Hi {{commonService.currentCustomer.name}}, <br>
+                Wouls you like a Pizza today?
+            </li>
+            <li>yes please</li>
+            <li>Please select one of the below offers:<br>
+                1. Buy a Pizza, Get a Free Drink<br>
+                2. Combo Offers - Pizza with Sides<br>
+            </li>
+            <li>1</li>
+            <li>Excellent Choice!<br>
+                Please select any 2 pizza:<br>
+                1. Epic Pepperoni-Stuffed Crust Pizza<br>
+                2. The Works Pizza<br>
+                3. The Meats Pizza<br>
+                4. Zesty Italian Trio Pizza<br>
+                5. Garden Fresh Pizza
+            </li>
+            <li>
+                2,4
+            </li>
+            <li>
+                Please Confirm:<br>
+                Order: The Works Pizza and Zesty Italian Trio Pizza<br>
+                Address: {{commonService.currentCustomer.address}}<br>
+                Yes/No
+            </li>
+            <li>Yes</li>
+            <li>Thank You! Your order is confirmed and will reach you shortly.<br>
+                Have a great day ahead!
+            </li>
+        </ul>
+        
+        <form class="chat-window">
+            <input class="chat-window-message" name="chat-window-message" type="text" autocomplete="off" autofocus />
+        </form>
     </div>
 </div>
