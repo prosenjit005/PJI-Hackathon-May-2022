@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonService } from './services/common.service';
 import { PromotionsService } from './services/promotions.service';
+import { MonitorChatComponent } from './monitor-chat/monitor-chat.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PromotionsService } from './services/promotions.service';
     LoginComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MonitorChatComponent
   ],
   imports: [
     BrowserModule,
