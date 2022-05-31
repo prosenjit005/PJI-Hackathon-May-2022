@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Customer, Promotion, PromotionsService, WhatsAppMsgDto } from '../services/promotions.service';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { CommonService } from '../services/common.service';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +19,8 @@ export class HomeComponent implements OnInit {
 
   selectedCustomerMonitor = new FormControl();
 
-  constructor(private promotionsService: PromotionsService, private router: Router) { }
+  constructor(private promotionsService: PromotionsService, private router: Router,
+    private commonService: CommonService) { }
 
   ngOnInit(): void {
     this.getAllCustomersService();
@@ -60,8 +62,12 @@ export class HomeComponent implements OnInit {
   }
 
   monitorChat() {
-    //redirect to monitorchat Page
-    this.router.navigate(['/monitorchat']);
+    if (null != this.selectedCustomerMonitor.value && this.selectedCustomerMonitor.value != "") {
+      this.commonService.currentCustomer = this.selectedCustomerMonitor.value;
+      //redirect to monitorchat Page
+      this.router.navigate(['/monitorchat']);
+    }
+
   }
 
 }

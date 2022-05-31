@@ -1,4 +1,13 @@
-<div>
+<div class="mainContent" id="monitorMainContId">
     <button mat-button color="primary" class="customBtn" (click)="backToHome()">Back To Home</button>
 
+    <div>
+        <div><b>Customer Name:</b> {{commonService.currentCustomer.name}}</div>
+        <div><b>Customer WhatsApp Number:</b> {{commonService.currentCustomer.contactNumber}}</div>
+        <div><b>Customer Address:</b> {{commonService.currentCustomer.address}}</div>
+    </div>
+
+    <div class="mainChatBoxDiv">
+        Main Chat Box
+    </div>
 </div>

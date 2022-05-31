@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommonService } from '../services/common.service';
 
 @Component({
   selector: 'app-monitor-chat',
@@ -8,9 +9,10 @@ import { Router } from '@angular/router';
 })
 export class MonitorChatComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public commonService: CommonService) { }
 
   ngOnInit(): void {
+    console.log("Current Monitor Customer=", this.commonService.currentCustomer);
   }
 
   backToHome() {
