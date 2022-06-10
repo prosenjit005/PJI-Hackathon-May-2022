@@ -85,6 +85,8 @@ body {
   right: -80px;
   /* background-image: ; */
   background-color: white;
+  background-image: url("../../assets/images/Papa_Johns_Logo_2019.svg");
+  background-size: 48px 21px;
 }
 
 .chat-thread li:nth-child(odd):after {
@@ -105,6 +107,7 @@ body {
   left: -80px;
   /* background-image: ; */
   background-color: lightgreen;
+  background-image: url("../../assets/images/Cartoon-Man-Avatar.svg");
 }
 
 .chat-thread li:nth-child(even):after {

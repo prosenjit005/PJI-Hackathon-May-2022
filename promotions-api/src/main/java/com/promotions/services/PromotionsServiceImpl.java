@@ -154,11 +154,12 @@ public class PromotionsServiceImpl implements PromotionsService {
 	@Override
 	public void sendWhatsAppMsg(WhatsAppMsgDto whatsAppMsgDto) {
 		String messageText = whatsAppMsgDto.getBody();
-		String cusWhatsAppNumber = whatsAppMsgDto.getTo();
+		String cusWhatsAppNumber = "whatsapp:"+whatsAppMsgDto.getTo();
 		Twilio.init(twilioAccountSid, twilioAccountAuthToken);
+		logger.info("\n\n\nFrom:{}\nTo:{}\n\n",twilioAccountWhatsAppNumber,cusWhatsAppNumber);
 		com.twilio.rest.api.v2010.account.Message twilioMessage = com.twilio.rest.api.v2010.account.Message
-				.creator(new com.twilio.type.PhoneNumber(twilioAccountWhatsAppNumber),
-						new com.twilio.type.PhoneNumber("whatsapp:"+cusWhatsAppNumber), messageText)
+				.creator(new com.twilio.type.PhoneNumber(cusWhatsAppNumber),
+						new com.twilio.type.PhoneNumber(twilioAccountWhatsAppNumber), messageText)
 				.create();
 		logger.info("Twilio SID={}", twilioMessage.getSid());
 	}
@@ -189,6 +190,11 @@ public class PromotionsServiceImpl implements PromotionsService {
 		* 5. Send confirmation message
 		* */
 		if(whatsAppMsgDto != null && StringUtils.isNotBlank(whatsAppMsgDto.getBody())) {
+			//checking for outbound flow reply - can be removed later
+			if(lastMessageTracker == 0 && whatsAppMsgDto.getBody().equalsIgnoreCase("1")) {
+				lastMessageTracker = 1;
+			}
+			
 			String customerMessage = whatsAppMsgDto.getBody();
 			String replyMessage = "";
 			if(lastMessageTracker == 0 ||
@@ -259,6 +265,7 @@ public class PromotionsServiceImpl implements PromotionsService {
 				if(NumberUtils.isParsable(customerMessage)) {
 					int quantity = Integer.parseInt(customerMessage);
 					replyMessage = buildFinalConfirmationMessageBody(quantity);
+					lastMessageTracker = 0;
 				} else {
 					replyMessage = "Please reply a number given from above list only. ";
 				}
@@ -289,7 +296,7 @@ public class PromotionsServiceImpl implements PromotionsService {
 			sbMessage.append("Promo applied: ").append(lastOfferSelected).append("\n");
 		}
 		sbMessage.append("---------------------------").append("\n");
-		sbMessage.append("Total amount to pay:").append(" $").append(0);
+		sbMessage.append("Total amount to pay:").append(" $").append("30");
 		return sbMessage.toString();
 	}
 
