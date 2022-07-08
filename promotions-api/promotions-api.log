@@ -1,32 +1,32 @@
-2022-06-10 00:05:03.554  INFO 12424 --- [restartedMain] com.promotions.PromotionsApiApplication  : Starting PromotionsApiApplication using Java 17.0.2 on VDI-PBISWAS with PID 12424 (C:\Prosenjit\Hackathon\workspace1\PJI-Hackathon-May-2022\promotions-api\target\classes started by Prosenjit_Biswas in C:\Prosenjit\Hackathon\workspace1\PJI-Hackathon-May-2022\promotions-api)
-2022-06-10 00:05:03.645  INFO 12424 --- [restartedMain] com.promotions.PromotionsApiApplication  : No active profile set, falling back to 1 default profile: "default"
-2022-06-10 00:05:03.934  INFO 12424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-06-10 00:05:03.936  INFO 12424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-06-10 00:05:10.056  INFO 12424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-06-10 00:05:10.062  INFO 12424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-06-10 00:05:10.710  INFO 12424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 612 ms. Found 3 JPA repository interfaces.
-2022-06-10 00:05:10.727  INFO 12424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-06-10 00:05:10.731  INFO 12424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-06-10 00:05:10.743  INFO 12424 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.promotions.repository.CustomerRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
-2022-06-10 00:05:10.744  INFO 12424 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.promotions.repository.MessageRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
-2022-06-10 00:05:10.745  INFO 12424 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.promotions.repository.PromotionRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
-2022-06-10 00:05:10.746  INFO 12424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 MongoDB repository interfaces.
-2022-06-10 00:05:11.496  INFO 12424 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=48b93a75-9d1a-3521-a95f-27699840f31a
-2022-06-10 00:05:16.202  INFO 12424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-06-10 00:05:16.219  INFO 12424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-10 00:05:16.220  INFO 12424 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-06-10 00:05:17.684  INFO 12424 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1.0]      : Initializing Spring embedded WebApplicationContext
-2022-06-10 00:05:17.834  INFO 12424 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13896 ms
-2022-06-10 00:05:20.794  INFO 12424 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-06-10 00:05:21.477  INFO 12424 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-06-10 00:05:22.097  INFO 12424 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-06-10 00:05:22.495  INFO 12424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-06-10 00:05:22.789  INFO 12424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-06-10 00:05:22.860  INFO 12424 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL92Dialect
-2022-06-10 00:05:24.939  INFO 12424 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-06-10 00:05:24.952  INFO 12424 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-06-10 00:05:25.671  WARN 12424 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-06-10 00:05:27.513  INFO 12424 --- [cluster-ClusterId{value='62a2c30793043332f298666c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+2022-06-27 09:30:15.908  INFO 16160 --- [restartedMain] com.promotions.PromotionsApiApplication  : Starting PromotionsApiApplication using Java 17.0.2 on VDI-PBISWAS with PID 16160 (C:\Prosenjit\Hackathon\workspace1\PJI-Hackathon-May-2022\promotions-api\target\classes started by Prosenjit_Biswas in C:\Prosenjit\Hackathon\workspace1\PJI-Hackathon-May-2022\promotions-api)
+2022-06-27 09:30:16.053  INFO 16160 --- [restartedMain] com.promotions.PromotionsApiApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-06-27 09:30:16.955  INFO 16160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-27 09:30:16.957  INFO 16160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-27 09:30:29.500  INFO 16160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-27 09:30:29.508  INFO 16160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-27 09:30:31.143  INFO 16160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1568 ms. Found 3 JPA repository interfaces.
+2022-06-27 09:30:31.236  INFO 16160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-27 09:30:31.243  INFO 16160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-27 09:30:31.448  INFO 16160 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.promotions.repository.CustomerRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-06-27 09:30:31.451  INFO 16160 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.promotions.repository.MessageRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-06-27 09:30:31.452  INFO 16160 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.promotions.repository.PromotionRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-06-27 09:30:31.455  INFO 16160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 0 MongoDB repository interfaces.
+2022-06-27 09:30:34.821  INFO 16160 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=48b93a75-9d1a-3521-a95f-27699840f31a
+2022-06-27 09:30:40.548  INFO 16160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-06-27 09:30:40.578  INFO 16160 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-27 09:30:40.586  INFO 16160 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-27 09:30:41.027  INFO 16160 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1.0]      : Initializing Spring embedded WebApplicationContext
+2022-06-27 09:30:41.030  INFO 16160 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 24033 ms
+2022-06-27 09:30:51.745  INFO 16160 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-27 09:30:52.373  INFO 16160 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-27 09:30:53.162  INFO 16160 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-27 09:30:53.775  INFO 16160 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-27 09:30:54.130  INFO 16160 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-27 09:30:54.198  INFO 16160 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL92Dialect
+2022-06-27 09:30:56.201  INFO 16160 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-27 09:30:56.255  INFO 16160 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-27 09:30:57.846  WARN 16160 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-27 09:31:01.743  INFO 16160 --- [cluster-ClusterId{value='62b9b115fc299c50c8b4360f', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
 
 com.mongodb.MongoSocketOpenException: Exception opening socket
 	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-4.6.0.jar:na]
@@ -46,170 +46,486 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.6.0.jar:na]
 	... 4 common frames omitted
 
-2022-06-10 00:05:27.527  INFO 12424 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.0"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.2+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@1964a310], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@56f7fbdb]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@11d80dba], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-2022-06-10 00:05:27.654  WARN 12424 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-06-10 00:05:27.688  WARN 12424 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-06-10 00:05:28.643  WARN 12424 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-06-10 00:05:28.704  INFO 12424 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2022-06-10 00:05:28.919  WARN 12424 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2022-06-10 00:05:28.929  INFO 12424 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-06-10 00:05:29.094  INFO 12424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64375 (http) with context path '/api/v1.0'
-2022-06-10 00:05:29.104  INFO 12424 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 64375
-2022-06-10 00:05:29.114  INFO 12424 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-06-10 00:05:29.193  INFO 12424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-06-10 00:05:29.204  INFO 12424 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 00:05:29.253  INFO 12424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-06-10 00:05:29.254  INFO 12424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-06-10 00:05:29.254  INFO 12424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-06-10 00:05:29.254  INFO 12424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-06-10 00:05:29.254  INFO 12424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-06-10 00:05:29.254  INFO 12424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-06-10 00:05:29.255  INFO 12424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-06-10 00:05:29.848  INFO 12424 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/api/v1.0]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-10 00:05:29.848  INFO 12424 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-06-10 00:05:29.851  INFO 12424 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-06-10 00:05:30.672  INFO 12424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-06-10 00:05:30.682  INFO 12424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-06-10 00:05:30.714  INFO 12424 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-06-10 00:05:30.754  INFO 12424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1654833930752 with initial instances count: 0
-2022-06-10 00:05:30.761  INFO 12424 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROMOTIONS-API with eureka with status UP
-2022-06-10 00:05:30.762  INFO 12424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1654833930762, current=UP, previous=STARTING]
-2022-06-10 00:05:30.766  INFO 12424 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0: registering service...
-2022-06-10 00:05:30.942  INFO 12424 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0 - registration status: 204
-2022-06-10 00:05:30.991  INFO 12424 --- [restartedMain] com.promotions.PromotionsApiApplication  : Started PromotionsApiApplication in 29.872 seconds (JVM running for 33.859)
-2022-06-10 00:06:00.695  INFO 12424 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-06-10 00:06:00.700  INFO 12424 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-06-10 00:06:00.700  INFO 12424 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-06-10 00:06:00.700  INFO 12424 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-06-10 00:06:00.701  INFO 12424 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-06-10 00:06:00.702  INFO 12424 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-06-10 00:06:00.704  INFO 12424 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-06-10 00:06:00.756  INFO 12424 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-06-10 00:10:29.269  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 00:15:29.282  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 00:20:29.298  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 00:25:29.627  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 00:30:29.661  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 00:35:29.678  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 00:40:29.712  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 00:45:29.759  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 00:50:29.795  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 00:55:29.818  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 01:00:29.904  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 01:05:29.946  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 01:10:29.967  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 01:15:30.017  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 01:20:30.055  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 01:25:30.084  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 01:30:30.106  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 01:35:30.120  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 01:40:30.132  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 01:45:30.148  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 01:50:30.155  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 01:55:30.171  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 02:00:30.177  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 02:05:30.186  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 02:10:30.423  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 02:15:30.471  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 02:20:30.493  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 02:25:30.530  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 02:30:30.622  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 02:35:30.661  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 02:40:30.677  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 02:45:30.738  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 02:50:30.772  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 02:55:30.797  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 03:00:30.847  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 03:05:30.893  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 03:10:30.924  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 03:15:30.947  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 03:20:30.959  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 03:25:30.971  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 03:30:30.976  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 03:35:30.987  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 03:40:31.003  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 03:45:31.009  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 03:50:31.020  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 03:55:31.031  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 04:00:31.035  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 04:05:31.090  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 04:10:31.419  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 04:15:31.437  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 04:20:31.448  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 04:25:31.487  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 04:30:31.524  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 04:35:31.552  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 04:40:31.581  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 04:45:31.638  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 04:50:31.666  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 04:55:31.690  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 05:00:31.751  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 05:05:31.792  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 05:10:31.813  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 05:15:31.823  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 05:20:31.836  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 05:25:31.852  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 05:30:31.861  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 05:35:31.877  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 05:40:31.881  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 05:45:31.890  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 05:50:31.897  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 05:55:31.901  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 06:00:31.920  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 06:05:31.998  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 06:10:32.304  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 06:15:32.316  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 06:20:32.334  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 06:25:32.381  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 06:30:32.427  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 06:35:32.452  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 06:40:32.478  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 06:45:32.530  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 06:50:32.556  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 06:55:32.566  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:00:32.641  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:05:32.686  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:10:32.718  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:15:32.767  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:20:32.808  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:25:32.833  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:30:32.848  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:35:32.864  INFO 12424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:37:20.087  INFO 12424 --- [http-nio-auto-1-exec-5] c.p.controller.PromotionsApiController   : sendWhatsAppMsg request=WhatsAppMsgDto(Body=Please select one of the below offers:
+2022-06-27 09:31:01.710  INFO 16160 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.0"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.2+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@3a8b504d], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@643b33b8]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@5a7f8bc], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-06-27 09:31:02.003  WARN 16160 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-06-27 09:31:02.078  WARN 16160 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-06-27 09:31:03.583  WARN 16160 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-06-27 09:31:03.720  INFO 16160 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-06-27 09:31:03.963  WARN 16160 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-06-27 09:31:03.978  INFO 16160 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-06-27 09:31:04.218  INFO 16160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52777 (http) with context path '/api/v1.0'
+2022-06-27 09:31:04.228  INFO 16160 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 52777
+2022-06-27 09:31:04.238  INFO 16160 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-06-27 09:31:04.316  INFO 16160 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-06-27 09:31:04.328  INFO 16160 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 09:31:04.409  INFO 16160 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-06-27 09:31:04.413  INFO 16160 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-06-27 09:31:04.415  INFO 16160 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-06-27 09:31:04.417  INFO 16160 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-06-27 09:31:04.420  INFO 16160 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-06-27 09:31:04.422  INFO 16160 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-06-27 09:31:04.424  INFO 16160 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-06-27 09:31:05.629  INFO 16160 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-06-27 09:31:05.643  INFO 16160 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-06-27 09:31:05.650  INFO 16160 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-06-27 09:31:05.663  INFO 16160 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1656336665661 with initial instances count: 0
+2022-06-27 09:31:05.711  INFO 16160 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROMOTIONS-API with eureka with status UP
+2022-06-27 09:31:05.720  INFO 16160 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1656336665719, current=UP, previous=STARTING]
+2022-06-27 09:31:05.739  INFO 16160 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0: registering service...
+2022-06-27 09:31:06.641  INFO 16160 --- [restartedMain] com.promotions.PromotionsApiApplication  : Started PromotionsApiApplication in 56.644 seconds (JVM running for 62.278)
+2022-06-27 09:31:06.698  INFO 16160 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0 - registration status: 204
+2022-06-27 09:31:35.645  INFO 16160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-06-27 09:31:35.646  INFO 16160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-06-27 09:31:35.647  INFO 16160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-06-27 09:31:35.647  INFO 16160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-06-27 09:31:35.648  INFO 16160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-06-27 09:31:35.648  INFO 16160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-06-27 09:31:35.648  INFO 16160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-06-27 09:31:35.676  INFO 16160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-06-27 09:36:04.435  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 09:41:04.518  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 09:46:04.805  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 09:51:04.814  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 09:56:04.824  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 09:56:48.177  INFO 16160 --- [http-nio-auto-1-exec-2] o.a.c.c.C.[.[localhost].[/api/v1.0]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-27 09:56:48.182  INFO 16160 --- [http-nio-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-27 09:56:48.187  INFO 16160 --- [http-nio-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-06-27 10:01:04.887  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 10:06:04.924  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 10:11:04.943  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 10:16:04.980  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 10:21:05.017  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 10:26:05.037  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 10:31:05.051  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 10:36:05.128  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 10:41:05.404  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 10:46:05.423  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 10:51:05.455  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 10:56:05.523  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:01:05.570  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:06:05.594  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:11:05.610  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:16:05.617  INFO 16160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:17:28.427  INFO 16160 --- [http-nio-auto-1-exec-3] c.p.controller.PromotionsApiController   : sendWhatsAppMsg request=WhatsAppMsgDto(Body=Please select one of the below offers:
 1. Get up to 50% assured cash back on purchase of minimum $10
 2. Buy a Pizza, Get a Free Drink, From=null, ApiVersion=null, SmsSid=null, SmsStatus=null, SmsMessageSid=null, ProfileName=null, NumSegments=null, WaId=null, MessageSid=null, AccountSid=null, ReferralNumMedia=null, To=+918260491922, NumMedia=null)
-2022-06-10 07:37:20.123  INFO 12424 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : 
+2022-06-27 11:17:28.467  INFO 16160 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : 
 
 
 From:whatsapp:+14155238886
 To:whatsapp:+918260491922
 
 
-2022-06-10 07:37:21.107  INFO 12424 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : Twilio SID=SM114adddf123b47898877aa7c6d0e335e
-2022-06-10 07:38:22.669  INFO 12424 --- [RMI TCP Connection(548)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-06-10 07:38:22.826  INFO 12424 --- [RMI TCP Connection(548)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROMOTIONS-API with eureka with status DOWN
-2022-06-10 07:38:22.829  INFO 12424 --- [RMI TCP Connection(548)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1654861102829, current=DOWN, previous=UP]
-2022-06-10 07:38:22.836  INFO 12424 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0: registering service...
-2022-06-10 07:38:22.939  INFO 12424 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8762/eureka/} exception=I/O error on POST request for "http://localhost:8762/eureka/apps/PROMOTIONS-API": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8762/eureka/apps/PROMOTIONS-API": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-06-27 11:17:29.425 ERROR 16160 --- [http-nio-auto-1-exec-3] o.a.c.c.C.[.[.[.0].[dispatcherServlet]   : Servlet.service() for servlet [dispatcherServlet] in context with path [/api/v1.0] threw exception [Request processing failed; nested exception is com.twilio.exception.ApiException: Authenticate] with root cause
+
+com.twilio.exception.ApiException: Authenticate
+	at com.twilio.rest.api.v2010.account.MessageCreator.create(MessageCreator.java:573) ~[twilio-8.30.1.jar:na]
+	at com.twilio.rest.api.v2010.account.MessageCreator.create(MessageCreator.java:27) ~[twilio-8.30.1.jar:na]
+	at com.twilio.base.Creator.create(Creator.java:40) ~[twilio-8.30.1.jar:na]
+	at com.promotions.services.PromotionsServiceImpl.sendWhatsAppMsg(PromotionsServiceImpl.java:163) ~[classes/:na]
+	at com.promotions.controller.PromotionsApiController.sendWhatsAppMsg(PromotionsApiController.java:110) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.63.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.20.jar:5.3.20]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.63.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.7.0.jar:2.7.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.63.jar:9.0.63]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-06-27 11:19:42.025  INFO 16160 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROMOTIONS-API with eureka with status DOWN
+2022-06-27 11:19:42.063  INFO 16160 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1656343182063, current=DOWN, previous=UP]
+2022-06-27 11:19:42.073  INFO 16160 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0: registering service...
+2022-06-27 11:19:42.179  INFO 16160 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0 - registration status: 204
+2022-06-27 11:19:42.366  INFO 16160 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-27 11:19:42.415  INFO 16160 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-27 11:19:42.477  INFO 16160 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-27 11:19:42.491  INFO 16160 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-06-27 11:19:45.562  INFO 16160 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-06-27 11:19:45.794  INFO 16160 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0 - deregister  status: 200
+2022-06-27 11:19:45.831  INFO 16160 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-06-27 11:19:46.845  INFO 16160 --- [restartedMain] com.promotions.PromotionsApiApplication  : Starting PromotionsApiApplication using Java 17.0.2 on VDI-PBISWAS with PID 16160 (C:\Prosenjit\Hackathon\workspace1\PJI-Hackathon-May-2022\promotions-api\target\classes started by Prosenjit_Biswas in C:\Prosenjit\Hackathon\workspace1\PJI-Hackathon-May-2022\promotions-api)
+2022-06-27 11:19:46.847  INFO 16160 --- [restartedMain] com.promotions.PromotionsApiApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-06-27 11:19:53.786  INFO 16932 --- [restartedMain] com.promotions.PromotionsApiApplication  : Starting PromotionsApiApplication using Java 17.0.2 on VDI-PBISWAS with PID 16932 (C:\Prosenjit\Hackathon\workspace1\PJI-Hackathon-May-2022\promotions-api\target\classes started by Prosenjit_Biswas in C:\Prosenjit\Hackathon\workspace1\PJI-Hackathon-May-2022\promotions-api)
+2022-06-27 11:19:53.788  INFO 16932 --- [restartedMain] com.promotions.PromotionsApiApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-06-27 11:19:53.942  INFO 16932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-27 11:19:53.946  INFO 16932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-27 11:20:01.858  INFO 16932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-27 11:20:01.862  INFO 16932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-27 11:20:02.828  INFO 16932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 953 ms. Found 3 JPA repository interfaces.
+2022-06-27 11:20:02.858  INFO 16932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-27 11:20:02.868  INFO 16932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-27 11:20:02.887  INFO 16932 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.promotions.repository.CustomerRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-06-27 11:20:02.902  INFO 16932 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.promotions.repository.MessageRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-06-27 11:20:02.903  INFO 16932 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.promotions.repository.PromotionRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-06-27 11:20:02.905  INFO 16932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 0 MongoDB repository interfaces.
+2022-06-27 11:20:03.823  INFO 16932 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=48b93a75-9d1a-3521-a95f-27699840f31a
+2022-06-27 11:20:05.186  INFO 16932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-06-27 11:20:05.228  INFO 16932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-27 11:20:05.231  INFO 16932 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-27 11:20:05.553  INFO 16932 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1.0]      : Initializing Spring embedded WebApplicationContext
+2022-06-27 11:20:05.561  INFO 16932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11612 ms
+2022-06-27 11:20:06.216  INFO 16932 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-27 11:20:06.340  INFO 16932 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-27 11:20:06.742  INFO 16932 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-27 11:20:07.008  INFO 16932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-27 11:20:07.308  INFO 16932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-27 11:20:07.377  INFO 16932 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL92Dialect
+2022-06-27 11:20:09.186  INFO 16932 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-27 11:20:09.202  INFO 16932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-27 11:20:09.876  WARN 16932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-27 11:20:11.936  INFO 16932 --- [cluster-ClusterId{value='62b9caab0c3d2e6db2e87861', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 4 common frames omitted
+
+2022-06-27 11:20:11.900  INFO 16932 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.0"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.2+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@778b9716], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6d2323f6]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@15d56158], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-06-27 11:20:12.136  WARN 16932 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-06-27 11:20:12.175  WARN 16932 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-06-27 11:20:13.486  WARN 16932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-06-27 11:20:13.899  INFO 16932 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-06-27 11:20:14.073  WARN 16932 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-06-27 11:20:14.082  INFO 16932 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-06-27 11:20:14.337  INFO 16932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56670 (http) with context path '/api/v1.0'
+2022-06-27 11:20:14.342  INFO 16932 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 56670
+2022-06-27 11:20:14.349  INFO 16932 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-06-27 11:20:14.472  INFO 16932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-06-27 11:20:14.483  INFO 16932 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:20:14.543  INFO 16932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-06-27 11:20:14.544  INFO 16932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-06-27 11:20:14.544  INFO 16932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-06-27 11:20:14.545  INFO 16932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-06-27 11:20:14.546  INFO 16932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-06-27 11:20:14.546  INFO 16932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-06-27 11:20:14.547  INFO 16932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-06-27 11:20:15.375  INFO 16932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-06-27 11:20:15.389  INFO 16932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-06-27 11:20:15.412  INFO 16932 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-06-27 11:20:15.432  INFO 16932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1656343215431 with initial instances count: 1
+2022-06-27 11:20:15.439  INFO 16932 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROMOTIONS-API with eureka with status UP
+2022-06-27 11:20:15.440  INFO 16932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1656343215440, current=UP, previous=STARTING]
+2022-06-27 11:20:15.444  INFO 16932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0: registering service...
+2022-06-27 11:20:15.547  INFO 16932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0 - registration status: 204
+2022-06-27 11:20:15.668  INFO 16932 --- [restartedMain] com.promotions.PromotionsApiApplication  : Started PromotionsApiApplication in 22.905 seconds (JVM running for 24.859)
+2022-06-27 11:20:16.126  INFO 16932 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/api/v1.0]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-27 11:20:16.126  INFO 16932 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-27 11:20:16.129  INFO 16932 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-06-27 11:24:27.171  INFO 16932 --- [http-nio-auto-1-exec-1] c.p.controller.PromotionsApiController   : sendWhatsAppMsg request=WhatsAppMsgDto(Body=Please select one of the below offers:
+1. Get up to 50% assured cash back on purchase of minimum $10
+2. Buy a Pizza, Get a Free Drink, From=null, ApiVersion=null, SmsSid=null, SmsStatus=null, SmsMessageSid=null, ProfileName=null, NumSegments=null, WaId=null, MessageSid=null, AccountSid=null, ReferralNumMedia=null, To=+918260491922, NumMedia=null)
+2022-06-27 11:24:27.177  INFO 16932 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : 
+
+
+From:whatsapp:+14155238886
+To:whatsapp:+918260491922
+
+
+2022-06-27 11:24:27.772  INFO 16932 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : Twilio SID=SMeb9bbe6f2a674f378d949b9957ac1e8f
+2022-06-27 11:24:36.249  INFO 16932 --- [http-nio-auto-1-exec-2] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:24:36.251  INFO 16932 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:24:36.251  INFO 16932 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=1, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMd3606c526bcd671e7470598d454409e1, SmsStatus=received, SmsMessageSid=SMd3606c526bcd671e7470598d454409e1, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMd3606c526bcd671e7470598d454409e1, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:24:36.251  INFO 16932 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+1 
+
+
+2022-06-27 11:24:36.251  INFO 16932 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:24:36.467  INFO 16932 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : Twilio SID=SM8c2ac030e7234c47821f28a6d0080239
+2022-06-27 11:24:40.418  INFO 16932 --- [http-nio-auto-1-exec-3] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:24:40.422  INFO 16932 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:24:40.422  INFO 16932 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=Y, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM6ad6b86c7c56afd7f2b11dbaa5fa08b2, SmsStatus=received, SmsMessageSid=SM6ad6b86c7c56afd7f2b11dbaa5fa08b2, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM6ad6b86c7c56afd7f2b11dbaa5fa08b2, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:24:40.423  INFO 16932 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+Y 
+
+
+2022-06-27 11:24:40.425  INFO 16932 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:24:40.566  INFO 16932 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : Twilio SID=SMd643875054134880ab2e092ac18429f2
+2022-06-27 11:24:45.013  INFO 16932 --- [http-nio-auto-1-exec-4] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:24:45.016  INFO 16932 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:24:45.016  INFO 16932 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=1, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMad5257e99ed9443df0c5bed9f64acaa7, SmsStatus=received, SmsMessageSid=SMad5257e99ed9443df0c5bed9f64acaa7, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMad5257e99ed9443df0c5bed9f64acaa7, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:24:45.016  INFO 16932 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+1 
+
+
+2022-06-27 11:24:45.016  INFO 16932 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:24:45.189  INFO 16932 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : Twilio SID=SM10f3be37233d4200a8a5f5098b0d8389
+2022-06-27 11:24:49.458  INFO 16932 --- [http-nio-auto-1-exec-5] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:24:49.461  INFO 16932 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:24:49.461  INFO 16932 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=4, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM6a9d46a792778626c0d54850d5750a21, SmsStatus=received, SmsMessageSid=SM6a9d46a792778626c0d54850d5750a21, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM6a9d46a792778626c0d54850d5750a21, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:24:49.466  INFO 16932 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+4 
+
+
+2022-06-27 11:24:49.468  INFO 16932 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:24:49.574  INFO 16932 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : Twilio SID=SM0b336dbed0dd4b058cebe08071d1f6ca
+2022-06-27 11:25:14.555  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:30:14.574  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:35:14.592  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:40:14.604  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:45:14.621  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:50:14.646  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:55:14.664  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 11:56:04.462  INFO 16932 --- [http-nio-auto-1-exec-7] c.p.controller.PromotionsApiController   : sendWhatsAppMsg request=WhatsAppMsgDto(Body=Please select one of the below offers:
+1. Get up to 50% assured cash back on purchase of minimum $10
+2. Buy a Pizza, Get a Free Drink, From=null, ApiVersion=null, SmsSid=null, SmsStatus=null, SmsMessageSid=null, ProfileName=null, NumSegments=null, WaId=null, MessageSid=null, AccountSid=null, ReferralNumMedia=null, To=+918260491922, NumMedia=null)
+2022-06-27 11:56:04.463  INFO 16932 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : 
+
+
+From:whatsapp:+14155238886
+To:whatsapp:+918260491922
+
+
+2022-06-27 11:56:04.751  INFO 16932 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : Twilio SID=SM965601bbb5a84ecd9557fc2d74fd8915
+2022-06-27 11:56:19.646  INFO 16932 --- [http-nio-auto-1-exec-8] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:56:19.654  INFO 16932 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:56:19.654  INFO 16932 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=1, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM0d0e1cb614480a8152a0d38155aac169, SmsStatus=received, SmsMessageSid=SM0d0e1cb614480a8152a0d38155aac169, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM0d0e1cb614480a8152a0d38155aac169, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:56:19.656  INFO 16932 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+1 
+
+
+2022-06-27 11:56:19.657  INFO 16932 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:56:19.800  INFO 16932 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : Twilio SID=SM2d32b76f4ef34dafb95e0ae6aed30f3d
+2022-06-27 11:56:28.163  INFO 16932 --- [http-nio-auto-1-exec-9] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:56:28.167  INFO 16932 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:56:28.168  INFO 16932 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=Y, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM70c4657e70ad8bda35807c6147ab763a, SmsStatus=received, SmsMessageSid=SM70c4657e70ad8bda35807c6147ab763a, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM70c4657e70ad8bda35807c6147ab763a, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:56:28.168  INFO 16932 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+Y 
+
+
+2022-06-27 11:56:28.168  INFO 16932 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:56:28.308  INFO 16932 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : Twilio SID=SM445114a8a764461e95f7b85961a9904a
+2022-06-27 11:56:37.641  INFO 16932 --- [http-nio-auto-1-exec-10] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:56:37.642  INFO 16932 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:56:37.642  INFO 16932 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=1, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM313416e76431e58535b35941354710e4, SmsStatus=received, SmsMessageSid=SM313416e76431e58535b35941354710e4, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM313416e76431e58535b35941354710e4, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:56:37.645  INFO 16932 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+1 
+
+
+2022-06-27 11:56:37.648  INFO 16932 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:56:37.748  INFO 16932 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : Twilio SID=SM4939e43bdb4b4c11a8ab226c7560665d
+2022-06-27 11:56:42.653  INFO 16932 --- [http-nio-auto-1-exec-1] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:56:42.654  INFO 16932 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:56:42.654  INFO 16932 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=2, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMf57cd930934beb92dae5ffe56feed433, SmsStatus=received, SmsMessageSid=SMf57cd930934beb92dae5ffe56feed433, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMf57cd930934beb92dae5ffe56feed433, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:56:42.654  INFO 16932 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+2 
+
+
+2022-06-27 11:56:42.654  INFO 16932 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:56:42.776  INFO 16932 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : Twilio SID=SM54c4bfd17a484031841b35388c88f6a3
+2022-06-27 11:57:03.650  INFO 16932 --- [http-nio-auto-1-exec-2] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:57:03.651  INFO 16932 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:57:03.652  INFO 16932 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=hi, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM49ddc1561da38e27e1503e5f1c46fc55, SmsStatus=received, SmsMessageSid=SM49ddc1561da38e27e1503e5f1c46fc55, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM49ddc1561da38e27e1503e5f1c46fc55, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:57:03.653  INFO 16932 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+hi 
+
+
+2022-06-27 11:57:03.654  INFO 16932 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:57:03.780  INFO 16932 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : Twilio SID=SMeb41fd850ee4497a8ec4e7ced1307d3a
+2022-06-27 11:57:14.221  INFO 16932 --- [http-nio-auto-1-exec-3] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:57:14.227  INFO 16932 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:57:14.227  INFO 16932 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=3, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMed184f9f0201a4d6ca5d62ed94f6c56f, SmsStatus=received, SmsMessageSid=SMed184f9f0201a4d6ca5d62ed94f6c56f, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMed184f9f0201a4d6ca5d62ed94f6c56f, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:57:14.227  INFO 16932 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+3 
+
+
+2022-06-27 11:57:14.228  INFO 16932 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:57:14.363  INFO 16932 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : Twilio SID=SM30fd106932b942c4be3d9a0382c80b0d
+2022-06-27 11:57:18.360  INFO 16932 --- [http-nio-auto-1-exec-4] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:57:18.367  INFO 16932 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:57:18.367  INFO 16932 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=y, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMfcf028acb064b1a0a9d80040a981fb62, SmsStatus=received, SmsMessageSid=SMfcf028acb064b1a0a9d80040a981fb62, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMfcf028acb064b1a0a9d80040a981fb62, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:57:18.376  INFO 16932 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+y 
+
+
+2022-06-27 11:57:18.376  INFO 16932 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:57:18.563  INFO 16932 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : Twilio SID=SMec1291f92da74b3ab58cbbe5d6b92e88
+2022-06-27 11:57:22.710  INFO 16932 --- [http-nio-auto-1-exec-5] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:57:22.710  INFO 16932 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:57:22.710  INFO 16932 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=3, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMb4aea3341c905a904c9f3e296ff00ce5, SmsStatus=received, SmsMessageSid=SMb4aea3341c905a904c9f3e296ff00ce5, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMb4aea3341c905a904c9f3e296ff00ce5, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:57:22.710  INFO 16932 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+3 
+
+
+2022-06-27 11:57:22.710  INFO 16932 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:57:22.830  INFO 16932 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : Twilio SID=SMd3a7b276f03a4ed49d9cece3214de662
+2022-06-27 11:57:27.393  INFO 16932 --- [http-nio-auto-1-exec-6] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@6dd1b1e7
+2022-06-27 11:57:27.394  INFO 16932 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
+2022-06-27 11:57:27.394  INFO 16932 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=2, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMf515c8d22b05a50b1598195d9ab19f63, SmsStatus=received, SmsMessageSid=SMf515c8d22b05a50b1598195d9ab19f63, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMf515c8d22b05a50b1598195d9ab19f63, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
+2022-06-27 11:57:27.395  INFO 16932 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : 
+
+Received Message:
+2 
+
+
+2022-06-27 11:57:27.395  INFO 16932 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
+2022-06-27 11:57:27.496  INFO 16932 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : Twilio SID=SM376e5a22e4e04f119202420cc9034ab7
+2022-06-27 12:00:14.675  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 12:05:14.693  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 12:10:14.699  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 12:15:14.716  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 12:20:14.721  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 12:25:14.740  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 12:30:15.040  INFO 16932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 12:33:36.675  INFO 16932 --- [RMI TCP Connection(96)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-27 12:33:36.681  INFO 16932 --- [RMI TCP Connection(96)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROMOTIONS-API with eureka with status DOWN
+2022-06-27 12:33:36.682  INFO 16932 --- [RMI TCP Connection(96)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1656347616682, current=DOWN, previous=UP]
+2022-06-27 12:33:36.684  INFO 16932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0: registering service...
+2022-06-27 12:33:36.754  INFO 16932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0 - registration status: 204
+2022-06-27 12:33:36.798  INFO 16932 --- [RMI TCP Connection(96)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-27 12:33:36.826  INFO 16932 --- [RMI TCP Connection(96)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-27 12:33:36.869  INFO 16932 --- [RMI TCP Connection(96)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-27 12:33:36.870  INFO 16932 --- [RMI TCP Connection(96)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-06-27 12:33:39.882  INFO 16932 --- [RMI TCP Connection(96)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-06-27 12:33:39.897  INFO 16932 --- [RMI TCP Connection(96)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8762/eureka/} exception=I/O error on DELETE request for "http://localhost:8762/eureka/apps/PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8762/eureka/apps/PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor131.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
@@ -228,7 +544,7 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8
 	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
 	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
-	... 21 more
+	... 75 more
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
@@ -238,103 +554,10 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at java.base/java.net.Socket.connect(Socket.java:633)
 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	... 34 more
+	... 88 more
 
-2022-06-10 07:38:22.939  WARN 12424 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8762/eureka/apps/PROMOTIONS-API": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-2022-06-10 07:38:22.991  INFO 12424 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8762/eureka/}, exception=I/O error on POST request for "http://localhost:8762/eureka/apps/PROMOTIONS-API": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8762/eureka/apps/PROMOTIONS-API": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
-	... 22 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.base/sun.nio.ch.Net.connect0(Native Method)
-	at java.base/sun.nio.ch.Net.connect(Net.java:579)
-	at java.base/sun.nio.ch.Net.connect(Net.java:568)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	... 35 more
-
-2022-06-10 07:38:22.993  WARN 12424 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8762/eureka/apps/PROMOTIONS-API": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-2022-06-10 07:38:23.439  WARN 12424 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0 - registration failed Cannot execute request on any known server
-
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2022-06-10 07:38:23.440  WARN 12424 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
-
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2022-06-10 07:38:23.650  INFO 12424 --- [RMI TCP Connection(548)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-06-10 07:38:23.728  INFO 12424 --- [RMI TCP Connection(548)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-06-10 07:38:23.796  INFO 12424 --- [RMI TCP Connection(548)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-06-10 07:38:23.803  INFO 12424 --- [RMI TCP Connection(548)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2022-06-10 07:38:26.828  INFO 12424 --- [RMI TCP Connection(548)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2022-06-10 07:38:26.850  INFO 12424 --- [RMI TCP Connection(548)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8762/eureka/}, exception=I/O error on DELETE request for "http://localhost:8762/eureka/apps/PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8762/eureka/apps/PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-06-27 12:33:39.898  WARN 16932 --- [RMI TCP Connection(96)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8762/eureka/apps/PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-06-27 12:33:39.911  INFO 16932 --- [RMI TCP Connection(96)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8762/eureka/}, exception=I/O error on DELETE request for "http://localhost:8762/eureka/apps/PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8762/eureka/apps/PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
@@ -396,8 +619,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
 	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
 	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor131.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
@@ -428,7 +650,7 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8
 	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
 	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
-	... 77 more
+	... 76 more
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
@@ -438,10 +660,10 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at java.base/java.net.Socket.connect(Socket.java:633)
 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	... 90 more
+	... 89 more
 
-2022-06-10 07:38:26.851  WARN 12424 --- [RMI TCP Connection(548)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8762/eureka/apps/PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-2022-06-10 07:38:26.857 ERROR 12424 --- [RMI TCP Connection(548)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0 - de-registration failedCannot execute request on any known server
+2022-06-27 12:33:39.913  WARN 16932 --- [RMI TCP Connection(96)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8762/eureka/apps/PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0": Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8762 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-06-27 12:33:39.915 ERROR 16932 --- [RMI TCP Connection(96)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0 - de-registration failedCannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -496,8 +718,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
 	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
 	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor131.invoke(Unknown Source) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
 	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
@@ -514,409 +735,4 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
-2022-06-10 07:38:26.933  INFO 12424 --- [RMI TCP Connection(548)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2022-06-10 07:38:42.980  INFO 14532 --- [restartedMain] com.promotions.PromotionsApiApplication  : Starting PromotionsApiApplication using Java 17.0.2 on VDI-PBISWAS with PID 14532 (C:\Prosenjit\Hackathon\workspace1\PJI-Hackathon-May-2022\promotions-api\target\classes started by Prosenjit_Biswas in C:\Prosenjit\Hackathon\workspace1\PJI-Hackathon-May-2022\promotions-api)
-2022-06-10 07:38:42.982  INFO 14532 --- [restartedMain] com.promotions.PromotionsApiApplication  : No active profile set, falling back to 1 default profile: "default"
-2022-06-10 07:38:43.396  INFO 14532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-06-10 07:38:43.397  INFO 14532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-06-10 07:38:48.459  INFO 14532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-06-10 07:38:48.512  INFO 14532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-06-10 07:38:49.142  INFO 14532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 605 ms. Found 3 JPA repository interfaces.
-2022-06-10 07:38:49.160  INFO 14532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-06-10 07:38:49.171  INFO 14532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-06-10 07:38:49.206  INFO 14532 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.promotions.repository.CustomerRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
-2022-06-10 07:38:49.207  INFO 14532 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.promotions.repository.MessageRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
-2022-06-10 07:38:52.989  INFO 14532 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.promotions.repository.PromotionRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
-2022-06-10 07:38:52.990  INFO 14532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3818 ms. Found 0 MongoDB repository interfaces.
-2022-06-10 07:38:53.488  INFO 14532 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=48b93a75-9d1a-3521-a95f-27699840f31a
-2022-06-10 07:38:54.702  INFO 14532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-06-10 07:38:54.736  INFO 14532 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-10 07:38:54.766  INFO 14532 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-06-10 07:38:55.095  INFO 14532 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1.0]      : Initializing Spring embedded WebApplicationContext
-2022-06-10 07:38:55.100  INFO 14532 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11701 ms
-2022-06-10 07:38:58.448  INFO 14532 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-06-10 07:38:58.616  INFO 14532 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-06-10 07:38:59.151  INFO 14532 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-06-10 07:38:59.612  INFO 14532 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-06-10 07:39:00.084  INFO 14532 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-06-10 07:39:00.342  INFO 14532 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL92Dialect
-2022-06-10 07:39:02.594  INFO 14532 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-06-10 07:39:02.609  INFO 14532 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-06-10 07:39:03.184  WARN 14532 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-06-10 07:39:04.642  INFO 14532 --- [cluster-ClusterId{value='62a32d58ffc4ee57c16ba1d2', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
-
-com.mongodb.MongoSocketOpenException: Exception opening socket
-	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-4.6.0.jar:na]
-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.0.jar:na]
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.0.jar:na]
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
-	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
-	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.6.0.jar:na]
-	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongodb-driver-core-4.6.0.jar:na]
-	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.6.0.jar:na]
-	... 4 common frames omitted
-
-2022-06-10 07:39:04.660  INFO 14532 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.0"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.2+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@35e12879], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@28f2423d]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@751d3f98], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-2022-06-10 07:39:04.789  WARN 14532 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-06-10 07:39:04.819  WARN 14532 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-06-10 07:39:05.756  WARN 14532 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-06-10 07:39:05.814  INFO 14532 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2022-06-10 07:39:05.939  WARN 14532 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2022-06-10 07:39:05.953  INFO 14532 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-06-10 07:39:06.101  INFO 14532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 53560 (http) with context path '/api/v1.0'
-2022-06-10 07:39:06.105  INFO 14532 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 53560
-2022-06-10 07:39:06.112  INFO 14532 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-06-10 07:39:06.309  INFO 14532 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-06-10 07:39:06.385  INFO 14532 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:39:06.446  INFO 14532 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-06-10 07:39:06.451  INFO 14532 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-06-10 07:39:06.452  INFO 14532 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-06-10 07:39:06.458  INFO 14532 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-06-10 07:39:06.458  INFO 14532 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-06-10 07:39:06.459  INFO 14532 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-06-10 07:39:06.459  INFO 14532 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-06-10 07:39:07.306  INFO 14532 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-06-10 07:39:07.314  INFO 14532 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-06-10 07:39:07.321  INFO 14532 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-06-10 07:39:07.359  INFO 14532 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1654861147358 with initial instances count: 0
-2022-06-10 07:39:07.364  INFO 14532 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROMOTIONS-API with eureka with status UP
-2022-06-10 07:39:07.365  INFO 14532 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1654861147365, current=UP, previous=STARTING]
-2022-06-10 07:39:07.372  INFO 14532 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0: registering service...
-2022-06-10 07:39:07.536  INFO 14532 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[.[localhost].[/api/v1.0]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-10 07:39:07.537  INFO 14532 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-06-10 07:39:07.540  INFO 14532 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2022-06-10 07:39:07.746  INFO 14532 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROMOTIONS-API/VDI-PBISWAS.us.pjids.net:promotions-api:0 - registration status: 204
-2022-06-10 07:39:08.002  INFO 14532 --- [restartedMain] com.promotions.PromotionsApiApplication  : Started PromotionsApiApplication in 26.823 seconds (JVM running for 29.784)
-2022-06-10 07:39:37.316  INFO 14532 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-06-10 07:39:37.317  INFO 14532 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-06-10 07:39:37.318  INFO 14532 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-06-10 07:39:37.318  INFO 14532 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-06-10 07:39:37.318  INFO 14532 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-06-10 07:39:37.319  INFO 14532 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-06-10 07:39:37.319  INFO 14532 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-06-10 07:39:37.349  INFO 14532 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-06-10 07:40:46.650  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.controller.PromotionsApiController   : sendWhatsAppMsg request=WhatsAppMsgDto(Body=Please select one of the below offers:
-1. Get up to 50% assured cash back on purchase of minimum $10
-2. Buy a Pizza, Get a Free Drink, From=null, ApiVersion=null, SmsSid=null, SmsStatus=null, SmsMessageSid=null, ProfileName=null, NumSegments=null, WaId=null, MessageSid=null, AccountSid=null, ReferralNumMedia=null, To=+918260491922, NumMedia=null)
-2022-06-10 07:40:46.663  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : 
-
-
-From:whatsapp:+14155238886
-To:whatsapp:+918260491922
-
-
-2022-06-10 07:40:47.169  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : Twilio SID=SM21a9d2fa4d3f41e8b3dcc8a0d9802290
-2022-06-10 07:41:40.936  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.controller.PromotionsApiController   : sendWhatsAppMsg request=WhatsAppMsgDto(Body=Please select one of the below offers:
-1. Get up to 50% assured cash back on purchase of minimum $10
-2. Buy a Pizza, Get a Free Drink, From=null, ApiVersion=null, SmsSid=null, SmsStatus=null, SmsMessageSid=null, ProfileName=null, NumSegments=null, WaId=null, MessageSid=null, AccountSid=null, ReferralNumMedia=null, To=+918260491922, NumMedia=null)
-2022-06-10 07:41:40.937  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : 
-
-
-From:whatsapp:+14155238886
-To:whatsapp:+918260491922
-
-
-2022-06-10 07:41:41.071  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : Twilio SID=SM512a0517137046b49555fc9f1871ac6c
-2022-06-10 07:42:01.346  INFO 14532 --- [http-nio-auto-1-exec-6] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:42:01.347  INFO 14532 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:42:01.348  INFO 14532 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=1, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM17f3c8317bc47cc5140d55311dc28548, SmsStatus=received, SmsMessageSid=SM17f3c8317bc47cc5140d55311dc28548, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM17f3c8317bc47cc5140d55311dc28548, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:42:01.348  INFO 14532 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-1 
-
-
-2022-06-10 07:42:01.352  INFO 14532 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:42:01.559  INFO 14532 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : Twilio SID=SM6fdb3b120a0e46adb773ec4fe38ecb3a
-2022-06-10 07:42:05.516  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:42:05.516  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:42:05.517  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=y, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMf1939a48de775753afb543dbfc5ae814, SmsStatus=received, SmsMessageSid=SMf1939a48de775753afb543dbfc5ae814, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMf1939a48de775753afb543dbfc5ae814, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:42:05.517  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-y 
-
-
-2022-06-10 07:42:05.517  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:42:05.744  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : Twilio SID=SMcf7dcaa002ee4d318945744f463e6846
-2022-06-10 07:42:13.556  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:42:13.558  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:42:13.558  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=3, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM165e40ef7c60cb5ce336aa7bbc3fe2a1, SmsStatus=received, SmsMessageSid=SM165e40ef7c60cb5ce336aa7bbc3fe2a1, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM165e40ef7c60cb5ce336aa7bbc3fe2a1, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:42:13.558  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-3 
-
-
-2022-06-10 07:42:13.559  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:42:13.694  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : Twilio SID=SMda1109beae3c41c98a9bcf0b7105f34e
-2022-06-10 07:42:19.069  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:42:19.069  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:42:19.070  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=3, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM5d9b875fbf6c35bf0062c0731700412f, SmsStatus=received, SmsMessageSid=SM5d9b875fbf6c35bf0062c0731700412f, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM5d9b875fbf6c35bf0062c0731700412f, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:42:19.070  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-3 
-
-
-2022-06-10 07:42:19.072  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:42:19.175  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : Twilio SID=SM0a4cee86f646418897b687e795bcf6ec
-2022-06-10 07:42:36.312  INFO 14532 --- [http-nio-auto-1-exec-10] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:42:36.313  INFO 14532 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:42:36.313  INFO 14532 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=hi, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM2b767097f6ec2ce675bcf3b7976f2103, SmsStatus=received, SmsMessageSid=SM2b767097f6ec2ce675bcf3b7976f2103, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM2b767097f6ec2ce675bcf3b7976f2103, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:42:36.313  INFO 14532 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-hi 
-
-
-2022-06-10 07:42:36.314  INFO 14532 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:42:36.433  INFO 14532 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : Twilio SID=SMcdb47bb4fe7b40d898391222b7c604fd
-2022-06-10 07:42:47.837  INFO 14532 --- [http-nio-auto-1-exec-2] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:42:47.838  INFO 14532 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:42:47.838  INFO 14532 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=3, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMaea77ba4f40840c22d5f0d81eb9bfb1c, SmsStatus=received, SmsMessageSid=SMaea77ba4f40840c22d5f0d81eb9bfb1c, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMaea77ba4f40840c22d5f0d81eb9bfb1c, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:42:47.838  INFO 14532 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-3 
-
-
-2022-06-10 07:42:47.839  INFO 14532 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:42:47.952  INFO 14532 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : Twilio SID=SM18671592c0664e99aab190f2c2ceeabc
-2022-06-10 07:42:51.855  INFO 14532 --- [http-nio-auto-1-exec-1] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:42:51.856  INFO 14532 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:42:51.860  INFO 14532 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=y, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM914d7ea02bea9703c9cae2bc56e86a95, SmsStatus=received, SmsMessageSid=SM914d7ea02bea9703c9cae2bc56e86a95, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM914d7ea02bea9703c9cae2bc56e86a95, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:42:51.860  INFO 14532 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-y 
-
-
-2022-06-10 07:42:51.861  INFO 14532 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:42:51.980  INFO 14532 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : Twilio SID=SMb57472c7fe334b3e8b5afb479154301c
-2022-06-10 07:42:57.994  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:42:57.994  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:42:57.996  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=4, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM64483479bf42999f3077bac33f17822e, SmsStatus=received, SmsMessageSid=SM64483479bf42999f3077bac33f17822e, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM64483479bf42999f3077bac33f17822e, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:42:57.996  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-4 
-
-
-2022-06-10 07:42:57.998  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:42:58.098  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : Twilio SID=SMb710369fd926490e9f8dc7a94a9a5b22
-2022-06-10 07:43:02.777  INFO 14532 --- [http-nio-auto-1-exec-4] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:43:02.778  INFO 14532 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:43:02.779  INFO 14532 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=2, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMa2a5983912d1c6be6de5a06b6e2b3d56, SmsStatus=received, SmsMessageSid=SMa2a5983912d1c6be6de5a06b6e2b3d56, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMa2a5983912d1c6be6de5a06b6e2b3d56, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:43:02.780  INFO 14532 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-2 
-
-
-2022-06-10 07:43:02.782  INFO 14532 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:43:02.942  INFO 14532 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : Twilio SID=SMe402e9b1e44a42bda3ab5eac7ef42c00
-2022-06-10 07:43:15.911  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.controller.PromotionsApiController   : sendWhatsAppMsg request=WhatsAppMsgDto(Body=Please select one of the below offers:
-1. Get up to 50% assured cash back on purchase of minimum $10
-2. Buy a Pizza, Get a Free Drink, From=null, ApiVersion=null, SmsSid=null, SmsStatus=null, SmsMessageSid=null, ProfileName=null, NumSegments=null, WaId=null, MessageSid=null, AccountSid=null, ReferralNumMedia=null, To=+918260491922, NumMedia=null)
-2022-06-10 07:43:15.912  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : 
-
-
-From:whatsapp:+14155238886
-To:whatsapp:+918260491922
-
-
-2022-06-10 07:43:16.019  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : Twilio SID=SM9845f46c8b1e473aae0fc273a6adca56
-2022-06-10 07:43:21.978  INFO 14532 --- [http-nio-auto-1-exec-6] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:43:21.979  INFO 14532 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:43:21.980  INFO 14532 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=1, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMeb9728fbd3b05abaa84b77df97cd2021, SmsStatus=received, SmsMessageSid=SMeb9728fbd3b05abaa84b77df97cd2021, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMeb9728fbd3b05abaa84b77df97cd2021, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:43:21.983  INFO 14532 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-1 
-
-
-2022-06-10 07:43:21.983  INFO 14532 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:43:22.101  INFO 14532 --- [http-nio-auto-1-exec-6] c.p.services.PromotionsServiceImpl       : Twilio SID=SMc6b538fcac334da1b286ef05210563f6
-2022-06-10 07:43:25.860  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:43:25.860  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:43:25.860  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=y, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM423631f55d1f1173b36f2838ca8ec771, SmsStatus=received, SmsMessageSid=SM423631f55d1f1173b36f2838ca8ec771, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM423631f55d1f1173b36f2838ca8ec771, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:43:25.861  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-y 
-
-
-2022-06-10 07:43:25.861  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:43:25.981  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : Twilio SID=SM44e16aacebbb44afb6110425f1f88bea
-2022-06-10 07:43:31.784  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:43:31.784  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:43:31.784  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=3, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM3b42b81aa1148d18fbcf076c99f6d739, SmsStatus=received, SmsMessageSid=SM3b42b81aa1148d18fbcf076c99f6d739, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM3b42b81aa1148d18fbcf076c99f6d739, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:43:31.784  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-3 
-
-
-2022-06-10 07:43:31.784  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:43:31.888  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : Twilio SID=SMf7db13a899ed403cb31cee052c5bbea5
-2022-06-10 07:43:36.083  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 07:43:36.085  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 07:43:36.085  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=2, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM4244edb094d97ca1eb079bc2e1bd64af, SmsStatus=received, SmsMessageSid=SM4244edb094d97ca1eb079bc2e1bd64af, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM4244edb094d97ca1eb079bc2e1bd64af, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 07:43:36.088  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-2 
-
-
-2022-06-10 07:43:36.088  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 07:43:36.197  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : Twilio SID=SM024522068dfb4eb69c3b7feefabb5523
-2022-06-10 07:44:06.480  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:49:06.493  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:54:06.510  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 07:59:06.519  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 08:04:06.533  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 08:09:06.546  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 08:14:06.557  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 08:19:06.569  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 08:24:06.773  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 08:29:06.929  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 08:34:06.945  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 08:39:06.960  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 08:44:07.015  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 08:49:07.054  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 08:54:07.077  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 08:59:07.128  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 09:04:07.168  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 09:09:07.196  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 09:14:07.227  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 09:19:07.292  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 09:24:07.320  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 09:29:07.332  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 09:34:07.351  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 09:39:07.360  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 09:44:07.378  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 09:49:07.435  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 09:54:07.514  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 09:56:44.960  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.controller.PromotionsApiController   : sendWhatsAppMsg request=WhatsAppMsgDto(Body=Please select one of the below offers:
-1. Get up to 50% assured cash back on purchase of minimum $10
-2. Buy a Pizza, Get a Free Drink, From=null, ApiVersion=null, SmsSid=null, SmsStatus=null, SmsMessageSid=null, ProfileName=null, NumSegments=null, WaId=null, MessageSid=null, AccountSid=null, ReferralNumMedia=null, To=+918260491922, NumMedia=null)
-2022-06-10 09:56:44.961  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : 
-
-
-From:whatsapp:+14155238886
-To:whatsapp:+918260491922
-
-
-2022-06-10 09:56:45.243  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : Twilio SID=SM5ea667edb69d4e7f94e27327334c53ca
-2022-06-10 09:57:09.142  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 09:57:09.143  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 09:57:09.143  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=1, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMa224251442b993ec00e85253a9b985e0, SmsStatus=received, SmsMessageSid=SMa224251442b993ec00e85253a9b985e0, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMa224251442b993ec00e85253a9b985e0, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 09:57:09.171  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-1 
-
-
-2022-06-10 09:57:09.171  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 09:57:09.360  INFO 14532 --- [http-nio-auto-1-exec-7] c.p.services.PromotionsServiceImpl       : Twilio SID=SMa5238f5e831a4c7791cb5ca745f55fc3
-2022-06-10 09:57:17.247  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 09:57:17.254  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 09:57:17.254  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=y, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM35c1dc7660850286707f336a25055936, SmsStatus=received, SmsMessageSid=SM35c1dc7660850286707f336a25055936, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM35c1dc7660850286707f336a25055936, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 09:57:17.254  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-y 
-
-
-2022-06-10 09:57:17.254  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 09:57:17.412  INFO 14532 --- [http-nio-auto-1-exec-8] c.p.services.PromotionsServiceImpl       : Twilio SID=SM355ab3b404a049d79e6fb42456a1add7
-2022-06-10 09:57:29.181  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 09:57:29.183  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 09:57:29.183  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=1, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SMa2a72fded3965db90189a7b121a94c80, SmsStatus=received, SmsMessageSid=SMa2a72fded3965db90189a7b121a94c80, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SMa2a72fded3965db90189a7b121a94c80, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 09:57:29.191  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-1 
-
-
-2022-06-10 09:57:29.192  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 09:57:29.299  INFO 14532 --- [http-nio-auto-1-exec-9] c.p.services.PromotionsServiceImpl       : Twilio SID=SMdf22c4fec65d48a0848869adc349985d
-2022-06-10 09:57:36.569  INFO 14532 --- [http-nio-auto-1-exec-10] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 09:57:36.570  INFO 14532 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 09:57:36.570  INFO 14532 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=2, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM26aa61df6fa7b4ce88f0d3ade7a408c3, SmsStatus=received, SmsMessageSid=SM26aa61df6fa7b4ce88f0d3ade7a408c3, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM26aa61df6fa7b4ce88f0d3ade7a408c3, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 09:57:36.570  INFO 14532 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-2 
-
-
-2022-06-10 09:57:36.570  INFO 14532 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 09:57:36.711  INFO 14532 --- [http-nio-auto-1-exec-10] c.p.services.PromotionsServiceImpl       : Twilio SID=SMca91a46631864130ab28a97ca9eea381
-2022-06-10 09:57:54.187  INFO 14532 --- [http-nio-auto-1-exec-2] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 09:57:54.188  INFO 14532 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 09:57:54.188  INFO 14532 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=hi, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM2d8a0f9404c37cd695dd76b4b8ce205e, SmsStatus=received, SmsMessageSid=SM2d8a0f9404c37cd695dd76b4b8ce205e, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM2d8a0f9404c37cd695dd76b4b8ce205e, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 09:57:54.188  INFO 14532 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-hi 
-
-
-2022-06-10 09:57:54.189  INFO 14532 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 09:57:54.364  INFO 14532 --- [http-nio-auto-1-exec-2] c.p.services.PromotionsServiceImpl       : Twilio SID=SMcc46d17cfbec4453985dbc9b3fefe2cc
-2022-06-10 09:58:09.625  INFO 14532 --- [http-nio-auto-1-exec-1] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 09:58:09.626  INFO 14532 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 09:58:09.626  INFO 14532 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=2, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM355e01944de90b543d02b1837c168264, SmsStatus=received, SmsMessageSid=SM355e01944de90b543d02b1837c168264, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM355e01944de90b543d02b1837c168264, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 09:58:09.626  INFO 14532 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-2 
-
-
-2022-06-10 09:58:09.626  INFO 14532 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 09:58:09.762  INFO 14532 --- [http-nio-auto-1-exec-1] c.p.services.PromotionsServiceImpl       : Twilio SID=SM448ef1e6c6444ada980532f9464c2455
-2022-06-10 09:58:15.056  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 09:58:15.057  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 09:58:15.057  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=y, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM4987692ba4dba65c91ccc265b071d5a9, SmsStatus=received, SmsMessageSid=SM4987692ba4dba65c91ccc265b071d5a9, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM4987692ba4dba65c91ccc265b071d5a9, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 09:58:15.061  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-y 
-
-
-2022-06-10 09:58:15.061  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 09:58:15.167  INFO 14532 --- [http-nio-auto-1-exec-3] c.p.services.PromotionsServiceImpl       : Twilio SID=SMe4582af4ce8a43f4a93c9f292c75fa9f
-2022-06-10 09:58:20.114  INFO 14532 --- [http-nio-auto-1-exec-4] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 09:58:20.115  INFO 14532 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 09:58:20.116  INFO 14532 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=4, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM2ef3ae0ed50747783a1a8e126b44bf75, SmsStatus=received, SmsMessageSid=SM2ef3ae0ed50747783a1a8e126b44bf75, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM2ef3ae0ed50747783a1a8e126b44bf75, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 09:58:20.116  INFO 14532 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-4 
-
-
-2022-06-10 09:58:20.116  INFO 14532 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 09:58:20.228  INFO 14532 --- [http-nio-auto-1-exec-4] c.p.services.PromotionsServiceImpl       : Twilio SID=SM65fa212fdfb545a08e748b1a1688578a
-2022-06-10 09:58:24.954  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.controller.PromotionsApiController   : Webhook Response=org.apache.catalina.util.ParameterMap@562426ac
-2022-06-10 09:58:24.955  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook starts!
-2022-06-10 09:58:24.955  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : processed webhook response=WhatsAppMsgDto(Body=2, From=whatsapp:+918260491922, ApiVersion=2010-04-01, SmsSid=SM5acbb87fe3c8e9e10174fedd0549f57e, SmsStatus=received, SmsMessageSid=SM5acbb87fe3c8e9e10174fedd0549f57e, ProfileName=Prosenjit Biswas, NumSegments=1, WaId=918260491922, MessageSid=SM5acbb87fe3c8e9e10174fedd0549f57e, AccountSid=null, ReferralNumMedia=0, To=whatsapp:+14155238886, NumMedia=0)
-2022-06-10 09:58:24.955  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : 
-
-Received Message:
-2 
-
-
-2022-06-10 09:58:24.955  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : processWhatsAppWebhook ends!
-2022-06-10 09:58:25.064  INFO 14532 --- [http-nio-auto-1-exec-5] c.p.services.PromotionsServiceImpl       : Twilio SID=SM5654e57ce69247c9980227c38c78d14a
-2022-06-10 09:59:07.560  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 10:04:07.585  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 10:09:07.596  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 10:14:07.609  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-06-10 10:19:07.617  INFO 14532 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-27 12:33:39.976  INFO 16932 --- [RMI TCP Connection(96)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
